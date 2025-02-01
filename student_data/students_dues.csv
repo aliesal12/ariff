@@ -1,0 +1,242 @@
+,Reg_No,Name,Monthly_fee,Dues,advance_payment,amount_paid,status,advance_payments_last,advance_months,Class
+0,000,Ali,1600,1600,0,0,Unpaid,0,0,Class-X
+1,T-I/0005,Muhammad Wasay Rehman,1650,1650,0,0,Unpaid,0,0,Class-X
+2,T-I/0030,Rafia Majeed,1650,3300,0,0,Unpaid,0,0,Class-X
+3,T-I/0043,Faleesha Riaz,1650,3300,0,0,Unpaid,0,0,Class-X
+6,T-I/0127,Muhammad Arham Ali,1500,3000,0,0,Unpaid,0,0,Class-IX
+10,T-I/0250,Bushra,800,1600,0,0,Unpaid,0,0,Class-VIII
+12,T-I/0295,Sadia,1200,2400,0,0,Unpaid,0,0,Class-VII
+13,T-I/0383,Muhammad Huzaifa,1400,2800,0,0,Unpaid,0,0,Class-VI
+15,T-I/0490,Hareem Baig,1400,2800,0,0,Unpaid,0,0,Class-V
+21,T-I/0667,Muhammad Ammar Ali Khan,1200,2400,0,0,Unpaid,0,0,Class-II
+24,T-I/0746,Eshal Fatima,1400,2800,0,0,Unpaid,0,0,Class-I
+25,T-I/0750,Inaaya Razi,1300,2600,0,0,Unpaid,0,0,Class-I
+28,T-II/0001,Azka,1650,3300,0,0,Unpaid,0,0,Class-X
+29,T-II/0002,Laiba Khalil,1650,3300,0,0,Unpaid,0,0,Class-X
+30,T-II/0044,Jazla Fatima,1650,3300,0,0,Unpaid,0,0,Class-X
+31,T-II/0136,Maryam ,1650,3300,0,0,Unpaid,0,0,Class-X
+32,T-II/0178,Maria ,1650,3300,0,0,Unpaid,0,0,Class-X
+33,T-II/0192,Muhammad Ayan Javed,1000,2000,0,0,Unpaid,0,0,Class-IX
+35,T-II/0223,Seenam,1350,2700,0,0,Unpaid,0,0,Class-IX
+36,T-II/0260,Muhammad Ayan Khan,1300,2600,0,0,Unpaid,0,0,Class-IX
+39,T-II/0350,Mohsin Uz Zaman,1400,2800,0,0,Unpaid,0,0,Class-VIII
+40,T-II/0468,Afreen,1300,2600,0,0,Unpaid,0,0,Class-VI
+41,T-II/0470,Ammara Shaikh,1300,2600,0,0,Unpaid,0,0,Class-VI
+42,T-II/0471,Nabaha Sohail,1400,2800,0,0,Unpaid,0,0,Class-VI
+43,T-II/0475,Mir Umer Ali,1200,2400,0,0,Unpaid,0,0,Class-VI
+46,T-II/0542,Muhammad Saad Bin Rizwan,650,1300,0,0,Unpaid,0,0,Class-V
+53,T-III/0202,Muhammad Subhan ,1650,3300,0,0,Unpaid,0,0,Class-X
+54,T-III/0218,Ammara,1650,3300,0,0,Unpaid,0,0,Class-X
+55,T-III/0263,Neerab Majid,1650,3300,0,0,Unpaid,0,0,Class-X
+56,T-III/0310,Hashid,1650,3300,0,0,Unpaid,0,0,Class-IX
+58,T-III/0485,Syed Shees Ali,1200,2400,0,0,Unpaid,0,0,Class-VII
+59,T-III/0492,Rumaisa Ali,1400,2800,0,0,Unpaid,0,0,Class-VII
+61,T-III/0534,Waniya Naseem,1300,2600,0,0,Unpaid,0,0,Class-VI
+62,T-III/0547,Mustafa Haseeb,1200,2400,0,0,Unpaid,0,0,Class-VI
+64,T-III/0634,Muhammad Rohan Khan,1650,3300,0,0,Unpaid,0,0,Class-V
+68,T-IV/0176,Muhammed Ashar,1650,3300,0,0,Unpaid,0,0,Class-X
+69,T-IV/0351,Raza Zaman,1650,3300,0,0,Unpaid,0,0,Class-X
+70,T-IV/0384,Muhammad Anas,1650,3300,0,0,Unpaid,0,0,Class-IX
+73,T-IV/0588,Muhammad Aman Uddin,800,1600,0,0,Unpaid,0,0,Class-VI
+74,T-IV/0589,Syeda Zainub  Humair,1400,2800,0,0,Unpaid,0,0,Class-VI
+75,T-IV/0627,Syeda Fatima,1400,2800,0,0,Unpaid,0,0,Class-VI
+79,T-IV/0715,Syed Nouman Ul Hassan Tirmizi,1650,3300,0,0,Unpaid,0,0,Class-V
+81,T-IX/0720,Zainab,1650,3300,0,0,Unpaid,0,0,Class-X
+82,T-IX/0732,Hamzah ,1650,3300,0,0,Unpaid,0,0,Class-X
+83,T-Nursery/0014,Muhammad Areeb,1300,2600,0,0,Unpaid,0,0,Class-VII
+84,T-Nursery/0016,Hassan Elahi,700,1400,0,0,Unpaid,0,0,Class-VII
+85,T-Nursery/0017,Kulsoom ,600,1200,0,0,Unpaid,0,0,Class-VII
+86,T-Nursery/0022,Syed Mohammad Rayyan,1400,2800,0,0,Unpaid,0,0,Class-VII
+87,T-Nursery/0047,Syeda Umm-e-Rooman,1400,2800,0,0,Unpaid,0,0,Class-VII
+88,T-Nursery/0070,Muhammad Abu Bakar,1400,2800,0,0,Unpaid,0,0,Class-VI
+89,T-Nursery/0071,Umaiz Ahmed,1400,2800,0,0,Unpaid,0,0,Class-VI
+92,T-Nursery/0080,Arfa,1300,2600,0,0,Unpaid,0,0,Class-VI
+93,T-Nursery/0081,Muhammad Jami Raza,1000,2000,0,0,Unpaid,0,0,Class-VI
+95,T-Nursery/0088,Jaweria Khan,1400,2800,0,0,Unpaid,0,0,Class-VI
+96,T-Nursery/0089,Zara Khan,1400,2800,0,0,Unpaid,0,0,Class-VI
+97,T-Nursery/0090,Syed Anus,1400,2800,0,0,Unpaid,0,0,Class-VI
+98,T-Nursery/0091,Muhammad Aman,800,1600,0,0,Unpaid,0,0,Class-VI
+99,T-Nursery/0093,Zunaira Waseem,1400,2800,0,0,Unpaid,0,0,Class-VI
+100,T-Nursery/0094,Rafia Saleem,1200,2400,0,0,Unpaid,0,0,Class-VI
+101,T-Nursery/0095,Muhammad Mustafa Khan,1300,2600,0,0,Unpaid,0,0,Class-VI
+102,T-Nursery/0097,Um-e-Farwa,1400,2800,0,0,Unpaid,0,0,Class-VI
+104,T-Nursery/0188,Muhammad Sarim,1500,3000,0,0,Unpaid,0,0,Class-V
+105,T-Nursery/0191,Tayyaba Zaheer,1500,3000,0,0,Unpaid,0,0,Class-V
+106,T-Nursery/0194,Hareem,1000,2000,0,0,Unpaid,0,0,Class-V
+108,T-Nursery/0198,Hurain Fatima,600,1200,0,0,Unpaid,0,0,Class-V
+113,T-Nursery/0241,Syed Ahmed Kamal ,950,1900,0,0,Unpaid,0,0,Class-V
+114,T-Nursery/0283,Muhammad Junaid Raza,850,1700,0,0,Unpaid,0,0,Class-IV
+115,T-Nursery/0288,Muhammad Zain,850,1700,0,0,Unpaid,0,0,Class-IV
+116,T-Nursery/0290,Muhammad Aliyan Faisal,850,1700,0,0,Unpaid,0,0,Class-IV
+117,T-Nursery/0291,Muhammad Zaid,850,1700,0,0,Unpaid,0,0,Class-IV
+119,T-Nursery/0307,Ayesha ,850,1700,0,0,Unpaid,0,0,Class-IV
+120,T-Nursery/0332,Zaroon Abdul Shahid,850,1700,0,0,Unpaid,0,0,Class-IV
+121,T-Nursery/0334,Mariam Javed,850,1700,0,0,Unpaid,0,0,Class-IV
+122,T-Nursery/0335,Sharafuddin Ahzum,850,1700,0,0,Unpaid,0,0,Class-IV
+123,T-Nursery/0336,Alyan Aqeel,700,1400,0,0,Unpaid,0,0,Class-IV
+124,T-Nursery/0337,Muhammad Ali Raza,850,1700,0,0,Unpaid,0,0,Class-IV
+125,T-Nursery/0338,Habiba,850,1700,0,0,Unpaid,0,0,Class-IV
+126,T-Nursery/0339,Hafsa Adnan,850,1700,0,0,Unpaid,0,0,Class-IV
+127,T-Nursery/0340,Anaya,850,1700,0,0,Unpaid,0,0,Class-IV
+128,T-Nursery/0348,Hadiya Ali,850,1700,0,0,Unpaid,0,0,Class-IV
+129,T-Nursery/0354,Zainab Imran,850,1700,0,0,Unpaid,0,0,Class-IV
+130,T-Nursery/0359,Ayza Khan,800,1600,0,0,Unpaid,0,0,Class-IV
+136,T-Nursery/0392,Anabia Fatima,1000,2000,0,0,Unpaid,0,0,Class-III
+137,T-Nursery/0393,Amna  Rizwan,1000,2000,0,0,Unpaid,0,0,Class-III
+138,T-Nursery/0395,Fasih Ud Din Arhum,1000,2000,0,0,Unpaid,0,0,Class-III
+139,T-Nursery/0401,Muhammad Arham Anus,1000,2000,0,0,Unpaid,0,0,Class-III
+140,T-Nursery/0411,Abdullah Sagheer Ahmed,1000,2000,0,0,Unpaid,0,0,Class-III
+141,T-Nursery/0415,Muhammad Kashan,1000,2000,0,0,Unpaid,0,0,Class-III
+142,T-Nursery/0422,Umm-e-Kulsoom Tauseef,1000,2000,0,0,Unpaid,0,0,Class-III
+143,T-Nursery/0429,Faryal Kamran,1000,2000,0,0,Unpaid,0,0,Class-III
+144,T-Nursery/0430,Muhammad Rayyan,1000,2000,0,0,Unpaid,0,0,Class-III
+146,T-Nursery/0436,Hamza ,1000,2000,0,0,Unpaid,0,0,Class-III
+147,T-Nursery/0437,Muhammad Umar Khan,1000,2000,0,0,Unpaid,0,0,Class-III
+148,T-Nursery/0438,Daniyal Khan,1000,2000,0,0,Unpaid,0,0,Class-III
+149,T-Nursery/0440,Muhammad Umar Khalidi,1000,2000,0,0,Unpaid,0,0,Class-III
+150,T-Nursery/0441,Aisha Noor,1000,2000,0,0,Unpaid,0,0,Class-III
+151,T-Nursery/0448,Muhammad Subhan ,1000,2000,0,0,Unpaid,0,0,Class-III
+152,T-Nursery/0450,Tazbiha,1000,2000,0,0,Unpaid,0,0,Class-III
+154,T-Nursery/0458,Mahad Ali,1000,2000,0,0,Unpaid,0,0,Class-III
+168,T-Nursery/0550,Muhammad Areeb,1200,2400,0,0,Unpaid,0,0,Class-I
+172,T-Nursery/0556,Muhammad Mustafa,1400,2800,0,0,Unpaid,0,0,Class-I
+173,T-Nursery/0557,Muhammad Ahmed,1300,2600,0,0,Unpaid,0,0,Class-I
+174,T-Nursery/0565,Amna Akram,1400,2800,0,0,Unpaid,0,0,Class-I
+175,T-Nursery/0567,Mohtasim,700,1400,0,0,Unpaid,0,0,Class-I
+177,T-Nursery/0573,Abiha Khan,1400,2800,0,0,Unpaid,0,0,Class-I
+178,T-Nursery/0575,Noor Ayesha,1400,2800,0,0,Unpaid,0,0,Class-I
+179,T-Nursery/0576,Hamna Ali,1200,2400,0,0,Unpaid,0,0,Class-I
+180,T-Nursery/0577,Urwa,1150,2300,0,0,Unpaid,0,0,Class-I
+181,T-Nursery/0580,Muhammad Huzaifa,1400,2800,0,0,Unpaid,0,0,Class-I
+183,T-Nursery/0584,Muhammad Anas Khan,1300,2600,0,0,Unpaid,0,0,Class-I
+184,T-Nursery/0591,Muhammad Rohan Qureshi,1300,2600,0,0,Unpaid,0,0,Prep-II
+185,T-Nursery/0592,Saad,1300,2600,0,0,Unpaid,0,0,Prep-II
+186,T-Nursery/0594,Urwa Zaheer,1300,2600,0,0,Unpaid,0,0,Prep-II
+187,T-Nursery/0595,Mishkat Fatima,1300,2600,0,0,Unpaid,0,0,Prep-II
+188,T-Nursery/0598,Mahrosh Noor,1400,2800,0,0,Unpaid,0,0,Prep-II
+189,T-Nursery/0603,Tasmiya,1300,2600,0,0,Unpaid,0,0,Class-I
+190,T-Nursery/0606,Maryam Fatima,1400,2800,0,0,Unpaid,0,0,Prep-II
+192,T-Nursery/0610,Ayat Zahra,1400,2800,0,0,Unpaid,0,0,Prep-II
+193,T-Nursery/0617,Zainab,1400,2800,0,0,Unpaid,0,0,Prep-II
+194,T-Nursery/0618,Manahil Fatima,1400,2800,0,0,Unpaid,0,0,Prep-II
+195,T-Nursery/0622,Aaira Khan,1400,2800,0,0,Unpaid,0,0,Prep-II
+196,T-Nursery/0623,Muhammad Mujtuba,700,1400,0,0,Unpaid,0,0,Prep-II
+197,T-Nursery/0624,Muhammad Talha,1200,2400,0,0,Unpaid,0,0,Prep-II
+198,T-Nursery/0629,Umaima Khan,1400,2800,0,0,Unpaid,0,0,Prep-II
+199,T-Nursery/0632,Hania Shaikh,1400,2800,0,0,Unpaid,0,0,Prep-II
+200,T-Nursery/0636,Fahad Uz Zaman,1400,2800,0,0,Unpaid,0,0,Prep-II
+201,T-Nursery/0637,Lujain Fatima,1400,2800,0,0,Unpaid,0,0,Prep-II
+202,T-Nursery/0638,Hania Adnan,1400,2800,0,0,Unpaid,0,0,Prep-II
+203,T-Nursery/0641,Muhammad Mustafa,1400,2800,0,0,Unpaid,0,0,Prep-II
+204,T-Nursery/0642,Muhammad Usman Khaldi,1200,2400,0,0,Unpaid,0,0,Prep-II
+205,T-Nursery/0643,Umar Farooq,1000,2000,0,0,Unpaid,0,0,Prep-II
+206,T-Nursery/0645,Laiba,1000,2000,0,0,Unpaid,0,0,Prep-II
+207,T-Nursery/0646,Rubaisha Baig,1400,2800,0,0,Unpaid,0,0,Prep-II
+208,T-Nursery/0647,Hamna Batool,1400,2800,0,0,Unpaid,0,0,Prep-II
+209,T-Nursery/0648,Khadija Kamran,1400,2800,0,0,Unpaid,0,0,Prep-II
+210,T-Nursery/0649,Muhammad Affan,1400,2800,0,0,Unpaid,0,0,Prep-II
+211,T-Nursery/0650,Mirha Zeeshan,1400,2800,0,0,Unpaid,0,0,Prep-II
+212,T-Nursery/0651,Afza,1400,2800,0,0,Unpaid,0,0,Prep-II
+213,T-Nursery/0652,Muhammad Asfahan Raza,1400,2800,0,0,Unpaid,0,0,Prep-II
+214,T-Nursery/0654,Minsa Ayubi,1400,2800,0,0,Unpaid,0,0,Prep-II
+215,T-Nursery/0655,Muhammad Talha,1400,2800,0,0,Unpaid,0,0,Prep-II
+216,T-Nursery/0656,Muhammad Ameer Hamza Ali,1400,2800,0,0,Unpaid,0,0,Prep-II
+217,T-Nursery/0657,Muhammad Abdullah Ali Khan,1400,2800,0,0,Unpaid,0,0,Prep-II
+218,T-Nursery/0658,Maryam,1400,2800,0,0,Unpaid,0,0,Prep-II
+219,T-Nursery/0659,Fareeha,1400,2800,0,0,Unpaid,0,0,Prep-II
+220,T-Nursery/0662,Aiza Rizwan,1500,3000,0,0,Unpaid,0,0,Prep-I
+222,T-Nursery/0665,Saif ur Rehman,1500,3000,0,0,Unpaid,0,0,Prep-I
+223,T-Nursery/0674,Anumta,1400,2800,0,0,Unpaid,0,0,Prep-I
+224,T-Nursery/0675,Anaiya,1400,2800,0,0,Unpaid,0,0,Prep-I
+225,T-Nursery/0676,Eshal Usmani,1500,3000,0,0,Unpaid,0,0,Prep-I
+226,T-Nursery/0677,Umm e Fabiha,1500,3000,0,0,Unpaid,0,0,Prep-I
+227,T-Nursery/0681,Muhammad Hasnian,1500,3000,0,0,Unpaid,0,0,Prep-I
+228,T-Nursery/0683,Khadija Rizwan,1500,3000,0,0,Unpaid,0,0,Prep-I
+229,T-Nursery/0687,Maryam Amir,1000,2000,0,0,Unpaid,0,0,Prep-I
+230,T-Nursery/0689,Arhaam Ahmed,1400,2800,0,0,Unpaid,0,0,Prep-I
+232,T-Nursery/0695,Aarib Ayubi,1500,3000,0,0,Unpaid,0,0,Prep-I
+233,T-Nursery/0696,Ume Hani,1500,3000,0,0,Unpaid,0,0,Prep-I
+234,T-Nursery/0699,Ayesha,1500,3000,0,0,Unpaid,0,0,Prep-I
+236,T-Nursery/0704,Muhammad Ali Rao,1500,3000,0,0,Unpaid,0,0,Prep-I
+237,T-Nursery/0705,Isaam Uddin Zaigham,1500,3000,0,0,Unpaid,0,0,Prep-I
+238,T-Nursery/0707,Zainab,1500,3000,0,0,Unpaid,0,0,Prep-I
+239,T-Nursery/0711,Rohan Ahmed,1500,3000,0,0,Unpaid,0,0,Prep-I
+240,T-Nursery/0712,Rabia Malik,1500,3000,0,0,Unpaid,0,0,Prep-I
+241,T-Nursery/0713,Hareem Fatima,1500,3000,0,0,Unpaid,0,0,Prep-I
+242,T-Nursery/0714,Ayzal Sheikh,1500,3000,0,0,Unpaid,0,0,Prep-I
+243,T-Nursery/0717,Horiya Zeeshan,1500,3000,0,0,Unpaid,0,0,Prep-I
+244,T-Nursery/0718,Umme Hani,1500,3000,0,0,Unpaid,0,0,Prep-I
+245,T-Nursery/0721,Khuzaima Adnan,1500,3000,0,0,Unpaid,0,0,Prep-I
+246,T-Nursery/0722,Umar Khan,1500,3000,0,0,Unpaid,0,0,Prep-I
+247,T-Nursery/0723,Shahwaiz Khan,1500,3000,0,0,Unpaid,0,0,Prep-I
+248,T-Nursery/0724,Abdul Ahad,1500,3000,0,0,Unpaid,0,0,Prep-I
+249,T-Nursery/0725,Fatima Noor,1400,2800,0,0,Unpaid,0,0,Prep-I
+250,T-Nursery/0727,Maryam Anis,1400,2800,0,0,Unpaid,0,0,Prep-I
+251,T-Nursery/0728,Hasnain Ahmed,1400,2800,0,0,Unpaid,0,0,Prep-I
+252,T-Nursery/0729,Zainab,1400,2800,0,0,Unpaid,0,0,Prep-I
+253,T-Nursery/0731,Amna Khan,1500,3000,0,0,Unpaid,0,0,Prep-I
+254,T-Nursery/0732,Muhammad Shahzain Ali Khan,1500,3000,0,0,Unpaid,0,0,Prep-I
+255,T-Nursery/0734,Syed Azan Ul Hasan,1500,3000,0,0,Unpaid,0,0,Prep-I
+256,T-Nursery/0738,Hoorain,1500,3000,0,0,Unpaid,0,0,Prep-I
+257,T-Nursery/0739,Urwa,1500,3000,0,0,Unpaid,0,0,Prep-I
+258,T-Nursery/0740,Zainab Khurram,1500,3000,0,0,Unpaid,0,0,Prep-I
+280,T-Nursey/0321,Muhammad Ibrahim Khan,850,1700,0,0,Unpaid,0,0,Class-IV
+281,T-Prep-I/0001,Muhammad Eshan Butt,1400,2800,0,0,Unpaid,0,0,Class-VII
+282,T-Prep-I/0002,Maria ,1000,2000,0,0,Unpaid,0,0,Class-VII
+284,T-Prep-I/0055,Abdul Ahad Qazi,1600,3200,0,0,Unpaid,0,0,Class-VIII
+285,T-Prep-I/0183,Muhammad Umer,1300,2600,0,0,Unpaid,0,0,Class-VI
+286,T-Prep-I/0184,Khadija Akber,1300,2600,0,0,Unpaid,0,0,Class-VI
+287,T-Prep-I/0190,Sawiyra Khan,1400,2800,0,0,Unpaid,0,0,Class-VI
+288,T-Prep-I/0193,Nabeeha Javed,1300,2600,0,0,Unpaid,0,0,Class-VI
+289,T-Prep-I/0200,Muhammad Ameen ,1400,2800,0,0,Unpaid,0,0,Class-VI
+290,T-Prep-I/0259,Merab Siddiqui,1200,2400,0,0,Unpaid,0,0,Class-VI
+293,T-Prep-I/0349,Haniya Ali,1650,3300,0,0,Unpaid,0,0,Class-V
+302,T-Prep-I/0533,Muhamad Ismail,1200,2400,0,0,Unpaid,0,0,Class-II
+309,T-Prep-I/0586,Abdul Hadi,1400,2800,0,0,Unpaid,0,0,Class-I
+310,T-Prep-I/0590,Muhammad Saif,1400,2800,0,0,Unpaid,0,0,Class-I
+311,T-Prep-I/0593,Hashir Ahmed,1300,2600,0,0,Unpaid,0,0,Class-I
+312,T-Prep-I/0607,Abdul Hadi Khan,1400,2800,0,0,Unpaid,0,0,Class-I
+313,T-Prep-I/0615,Eman Fatima,1400,2800,0,0,Unpaid,0,0,Class-I
+314,T-Prep-I/0620,Muhammad Zain ,1300,2600,0,0,Unpaid,0,0,Class-I
+315,T-Prep-I/0621,Abiha Fatima,1200,2400,0,0,Unpaid,0,0,Class-I
+316,T-Prep-I/0625,Abdul Wasay Bin Zeeshan,1300,2600,0,0,Unpaid,0,0,Class-I
+317,T-Prep-I/0633,Muhammad Azan,1400,2800,0,0,Unpaid,0,0,Class-I
+318,T-Prep-I/0639,Nabia Anis,1300,2600,0,0,Unpaid,0,0,Class-I
+319,T-prep-I/0644,Aneeqa Khan,1400,2800,0,0,Unpaid,0,0,Class-I
+320,T-Prep-I/0661,Muhammad Arsam,1500,3000,0,0,Unpaid,0,0,Prep-II
+321,T-Prep-I/0666,Rania Siddiqui,1300,2600,0,0,Unpaid,0,0,Prep-II
+322,T-Prep-I/0670,Muhammad Mohtashim,1500,3000,0,0,Unpaid,0,0,Prep-II
+323,T-Prep-I/0678,Abdul Hadi,1500,3000,0,0,Unpaid,0,0,Prep-II
+324,T-Prep-I/0679,Bushra Khan,1300,2600,0,0,Unpaid,0,0,Prep-II
+325,T-Prep-I/0682,Mataish Fatima ,1400,2800,0,0,Unpaid,0,0,Prep-II
+326,T-Prep-I/0684,Muhammad,1500,3000,0,0,Unpaid,0,0,Prep-II
+327,T-Prep-I/0686,Mubashira Fatima,1400,2800,0,0,Unpaid,0,0,Prep-II
+328,T-Prep-I/0688,Manahil,1500,3000,0,0,Unpaid,0,0,Prep-II
+329,T-Prep-I/0691,Ayesha Irshad,1300,2600,0,0,Unpaid,0,0,Prep-II
+336,T-Prep-II/0038,Wajeeha,950,1900,0,0,Unpaid,0,0,Class-IX
+340,T-Prep-II/0115,Muhammad Jawwad,1200,2400,0,0,Unpaid,0,0,Class-VII
+343,T-Prep-II/0203,Hafsa,1400,2800,0,0,Unpaid,0,0,Class-VII
+344,T-Prep-II/0210,Muhammad Hussain,1400,2800,0,0,Unpaid,0,0,Class-VII
+345,T-Prep-II/0221,Haiqa,1400,2800,0,0,Unpaid,0,0,Class-VII
+346,T-Prep-II/0264,Aswad Raza,1300,2600,0,0,Unpaid,0,0,Class-VII
+350,T-Prep-II/0419,Hooria Jawwad,1400,2800,0,0,Unpaid,0,0,Class-V
+365,T-Prep-II/0673,Ayesha Khan,1300,2600,0,0,Unpaid,0,0,Class-I
+366,T-Prep-II/0678,Fatima Usmani,1300,2600,0,0,Unpaid,0,0,Class-I
+367,T-Prep-II/0703,Fabiha Anees,1200,2400,0,0,Unpaid,0,0,Class-I
+368,T-V/0387,Muhammad Shahmir,1650,3300,0,0,Unpaid,0,0,Class-X
+369,T-V/0410,Tazeem,1650,3300,0,0,Unpaid,0,0,Class-X
+370,T-V/0439,Mariam Rizwan,1650,3300,0,0,Unpaid,0,0,Class-X
+374,T-V/0523,Farzeen,1650,3300,0,0,Unpaid,0,0,Class-IX
+375,T-V/0524,Shehzeen,1200,2400,0,0,Unpaid,0,0,Class-IX
+376,T-V/0604,Abdul Wasi,1000,2000,0,0,Unpaid,0,0,Class-VII
+377,T-V/0615,Tasbiha,600,1200,0,0,Unpaid,0,0,Class-VII
+378,T-V/0660,Faria Lodhi,1400,2800,0,0,Unpaid,0,0,Class-VII
+380,T-VI/0426,Konain Kashaf,1650,3300,0,0,Unpaid,0,0,Class-X
+381,T-VI/0484,Muhammad Waiz,1650,3300,0,0,Unpaid,0,0,Class-X
+382,T-VI/0493,Syed Anas Ali,1650,3300,0,0,Unpaid,0,0,Class-X
+385,T-VI/0616,Bilal Mohsin,1650,3300,0,0,Unpaid,0,0,Class-VIII
+389,T/VII/0489,Syeda Yashfeen Manazir,1650,3300,0,0,Unpaid,0,0,Class-X
+390,T-VII/0521,Shaikh Muhammad Umar,1650,3300,0,0,Unpaid,0,0,Class-X
+391,T-VII/0558,Syed Shahid Hussain,1650,3300,0,0,Unpaid,0,0,Class-X
+392,T-VII/0561,Maria,1650,3300,0,0,Unpaid,0,0,Class-X
+398,T-VIII/0605,Areeba,1650,3300,0,0,Unpaid,0,0,Class-X

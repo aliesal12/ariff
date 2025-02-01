@@ -1,0 +1,29 @@
+Assets,Liabilities,Equity,Revenue,Expenses
+1010: Current (Bank Account),2010: Accounts Payable,3100: Capital,4010: Tuition Fee Income,5000: Salaries and Wages
+1030: Savings (Bank Account),2100: Accrued Salaries,3200: Profit or Loss Reserve A/c,4020: Annual Fund Income,5030: Medical Allowance
+1210: Accounts Receivable,2110: Accrued daily Wages,3300: Drawings (Contra Equity),4030: Admission Fee,5040: Eidi / Special Bonus
+1220: Fee Receivable,2115: Accrued Employee Benefits,,4040: Event Collection,5050: Retirement Benefits/ Special Payment
+1310: Inventory,2150: Accrued Any taxes and duties,,4110: Special Events - Sponsorships,5060: Rent Expenses
+1320: Stationery Unused/ Stock,2200: Advanced Fee Received,,4120: Special Events - Auction,6000: Depreciation Expense
+1330: Printed Supplies Unused/ Stock,2250: Rent Payable,,4200: Program Revenue,6100: Amortization Expense
+1410: Prepaid Expenses,2260: Utilities Payable,,4300: Card Renewal Income,6200: Bad Debts Expense
+1510: Property / Building,2300: Misc. Services Payable,,4500: Admission Test kit income,8000: Donation/ Fundraising Expenses
+1520: Furniture & Fixtures,,,4600: Special kind Contributions,8100: Special Event Expenses
+1530: Lab. Equipment (Electronic)/ Mechanical,,,4900: Other Contribution (Sadqat),8200: Program Expenses
+1540: Equipment (Electronic)/ Mechanical,,,,8300: Marketing and Branding
+1590: Accumulated Depreciation (Contra Assets),,,,8310: Advertising/ Media expenses
+1690: Accumulated Amortization (Contra Assets),,,,8410: Fuel Expense
+1790: Allowance for Bad Debts (Contra Assets),,,,8420: Transportation expenses for Teachers
+,,,,8430: School Registration renewal charges
+,,,,8510: Water and Gas Expenses
+,,,,8520: Electricity expenses
+,,,,8525: Telecommunications + Internet charges
+,,,,8530: Maintenance and Repairs Building & Furniture
+,,,,8540: Office Supplies
+,,,,8550: Printing and Copying
+,,,,8560: Postage and Shipping
+,,,,8570: Maintenance & Repairs - generator
+,,,,8610: Bank Fees
+,,,,8620: Staff Training and welfare expenses
+,,,,8810: Student Welfare expenses
+,,,,8890: Miscellaneous Expenses

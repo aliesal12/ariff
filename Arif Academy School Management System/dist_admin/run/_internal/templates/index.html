@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop Application</title>
+    <link rel="stylesheet" href="..\static\styles\styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <img
+        src="static\imgs\IMG-20240715-WA0005.jpg"
+        alt="Arif Academy of Education Logo"
+        class="logo"
+      />
+      <div class="button-container">
+        <button id="button1">Master Data Update</button>
+        <button>Monthly Bill Generation</button>
+        <button>Fee collection</button>
+        <button>Monthly Payroll</button>
+        <button>Payments</button>
+        <button>General Voucher</button>
+        <button>Generate Records</button>
+        <button>Upload SQL</button>
+        <button>Add/Remove Chart of Accounts</button>
+      </div>
+      <div class="clickable-text">Generate Report</div>
+    </div>
+
+    <div id="expenseDialog" class="dialog">
+      <div class="dialog-content">
+        <span class="close">&times;</span>
+        <h2>Expense Categories</h2>
+        <div id="expenseSections">
+          <div id="assetsSection" class="expense-section">
+            <h3>Assets</h3>
+            <div class="expense-list"></div>
+          </div>
+          <div id="liabilitiesSection" class="expense-section">
+            <h3>Liabilities</h3>
+            <div class="expense-list"></div>
+          </div>
+          <div id="equitySection" class="expense-section">
+            <h3>Equity</h3>
+            <div class="expense-list"></div>
+          </div>
+          <div id="revenueSection" class="expense-section">
+            <h3>Revenue</h3>
+            <div class="expense-list"></div>
+          </div>
+          <div id="expensesSection" class="expense-section">
+            <h3>Expenses</h3>
+            <div class="expense-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="paymentTypeDialog" class="dialog">
+      <div class="dialog-content">
+        <h3>Select Payment Type</h3>
+        <form id="paymentTypeForm">
+          <label>
+            <input type="radio" name="paymentType" value="Cash" required> Cash
+          </label>
+          <label>
+            <input type="radio" name="paymentType" value="1010: Current (Bank Account)" required> Bank
+          </label>
+          <button type="submit">Confirm</button>
+          <button type="button" id="cancelPaymentType">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="addRemoveDialog" class="dialog">
+      <div class="dialog-content">
+        <h3>Select Action</h3>
+        <form id="addRemoveForm">
+          <label>
+            <input type="radio" name="action" value="add" required> Add
+          </label>
+          <label>
+            <input type="radio" name="action" value="remove" required> Remove
+          </label>
+          <button type="submit">Confirm</button>
+          <button type="button" id="cancelAddRemove">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="reportOptionsDialog" class="dialog">
+      <div class="dialog-content">
+        <h3>Select Report Options</h3>
+        <form id="reportOptionsForm">
+          <div class="option-group">
+            <label>
+              <input type="radio" name="timeUnit" value="days" required> Days
+            </label>
+            <label>
+              <input type="radio" name="timeUnit" value="months" required> Months
+            </label>
+          </div>
+          <div class="input-group">
+            <input type="number" id="timeValue" required>
+          </div>
+          <div class="error-message" id="errorMessage"></div>
+          <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="button" id="cancelReportOptions">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="categorySelectionDialog" class="dialog">
+      <div class="dialog-content">
+        <h3>Select Category</h3>
+        <form id="categorySelectionForm">
+          <label>
+            <input type="radio" name="category" value="Assets" required> Assets
+          </label>
+          <label>
+            <input type="radio" name="category" value="Liabilities" required> Liabilities
+          </label>
+          <label>
+            <input type="radio" name="category" value="Equity" required> Equity
+          </label>
+          <label>
+            <input type="radio" name="category" value="Revenue" required> Revenue
+          </label>
+          <label>
+            <input type="radio" name="category" value="Expenses" required> Expenses
+          </label>
+          <button type="submit">Confirm</button>
+          <button type="button" id="cancelCategorySelection">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <button class="teacher_update" id="teacherButton">Teacher</button>
+        <button class="student_update" id="studentButton">Student</button>
+      </div>
+    </div>
+
+    <div id="teacherPopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <button class="popup-button">Add new</button>
+        <button class="popup-button">Update</button>
+        <button class="popup-button">Delete</button>
+      </div>
+    </div>
+
+    <div id="studentPopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <button class="popup-button">Add new</button>
+        <button class="popup-button">Update</button>
+        <button class="popup-button">Delete</button>
+      </div>
+    </div>
+
+    <script src="../static/scripts/script.js"></script>
+  </body>
+</html>
