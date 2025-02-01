@@ -49,9 +49,9 @@ def create_fee_voucher_document(student_data,today):
     font.name = 'Arial'
     font.size = Pt(10)
     os.makedirs('vouchers', exist_ok=True)
-    directory_path=f'vouchers/{student_data['Class']}'
+    directory_path=f"vouchers/{student_data['Class']}"
     os.makedirs(directory_path, exist_ok=True)
-    output_path=f'{directory_path}/fee_voucher_{student_data['Reg_No'].replace('/','')}.docx'
+    output_path=f"{directory_path}/fee_voucher_{student_data['Reg_No'].replace('/','')}.docx"
 
     # Define a method to add the content for one voucher
     def add_voucher_content(cell):
@@ -63,8 +63,8 @@ def create_fee_voucher_document(student_data,today):
         
         table = cell.add_table(rows=1, cols=2)
         hdr_cells = table.rows[0].cells
-        hdr_cells[0].text = f'S/No: {student_data['Reg_No']}'
-        hdr_cells[1].text = f'Date: {str(today)}'
+        hdr_cells[0].text = f"S/No: {student_data['Reg_No']}"
+        hdr_cells[1].text = f"Date: {str(today)}"
 
         cell.add_paragraph(f"Name: {student_data['Name']}")
         cell.add_paragraph(f"Class: {student_data['Class']}")
@@ -151,13 +151,13 @@ def fee_voucher_gen():
 
 def teacher_update(data, cursor):
     if data['NAME'] is not None and data['NAME']!="":
-        cursor.execute(f'UPDATE teachers SET Name = "{data['NAME']}" WHERE CNIC="{data['CNIC']}";')
+        cursor.execute(f'UPDATE teachers SET Name = "{data["NAME"]}" WHERE CNIC="{data["CNIC"]}";')
     if data['SAL'] is not None and data['SAL']!="":
-        cursor.execute(f'UPDATE teachers SET Salary = {data['SAL']} WHERE CNIC="{data['CNIC']}";')
+        cursor.execute(f'UPDATE teachers SET Salary = {data["SAL"]} WHERE CNIC="{data["CNIC"]}";')
     if data['CONTACT'] is not None and data['CONTACT']!="":
-        cursor.execute(f'UPDATE teachers SET CONTACT = "{data['CONTACT']}" WHERE CNIC="{data['CNIC']}";')
+        cursor.execute(f'UPDATE teachers SET CONTACT = "{data["CONTACT"]}" WHERE CNIC="{data["CNIC"]}";')
     if data['DOJ'] is not None and data['DOJ']!="":
-        cursor.execute(f'UPDATE teachers SET Date_OF_Joining = DATE "{data['DOJ']}" WHERE CNIC="{data['CNIC']}";')
+        cursor.execute(f'UPDATE teachers SET Date_OF_Joining = DATE "{data["DOJ"]}" WHERE CNIC="{data["CNIC"]}";')
 
 @app.route('/teacher_data_update_delete/api', methods=['POST'])
 def add_update_teacher():
@@ -169,7 +169,7 @@ def add_update_teacher():
     today=datetime.date.today()
     if int(data['INDEX'])==0:
         try:
-            cursor.execute(f'INSERT INTO teachers (CNIC) VALUES("{data['CNIC']}");')
+            cursor.execute(f'INSERT INTO teachers (CNIC) VALUES("{data["CNIC"]}");')
             teacher_update(data, cursor)
         except IntegrityError as e:
             if e.errno == 1062:  # Error code for duplicate entry
@@ -188,16 +188,16 @@ def add_update_teacher():
     elif int(data['INDEX'])==1:
         try:
             if data['newcnic'] is not None and data['newcnic']!='':
-                cursor.execute(f'INSERT INTO teachers SELECT "{data['newcnic']}", Name, Salary, CONTACT, Date_OF_Joining FROM teachers WHERE CNIC = "{data['CNIC']}";')
-                cursor.execute(f'UPDATE payment SET CNIC = "{data['newcnic']}" WHERE CNIC="{data['CNIC']}";')
-                cursor.execute(f'DELETE FROM teachers WHERE CNIC="{data['CNIC']}";')
+                cursor.execute(f'INSERT INTO teachers SELECT "{data["newcnic"]}", Name, Salary, CONTACT, Date_OF_Joining FROM teachers WHERE CNIC = "{data["CNIC"]}";')
+                cursor.execute(f'UPDATE payment SET CNIC = "{data["newcnic"]}" WHERE CNIC="{data["CNIC"]}";')
+                cursor.execute(f'DELETE FROM teachers WHERE CNIC="{data["CNIC"]}";')
                 data['CNIC']=data['newcnic']
             teacher_update(data, cursor)
         except Exception as e:
             return jsonify({"result": str(e)+". Data not updated..."}), 500
     elif int(data['INDEX'])==2:
         try:
-            cursor.execute(f'DELETE FROM teachers WHERE CNIC="{data['CNIC']}";')
+            cursor.execute(f'DELETE FROM teachers WHERE CNIC="{data["CNIC"]}";')
         except Exception as e:
             if 'connection' in locals() and connection.is_connected():
                 cursor.close()
@@ -242,9 +242,9 @@ def fee_payment():
                 advm=str(data['Advanced_month'])
                 cursor.execute(f'UPDATE fee SET Dues=0, Status="Paid", advance={advp}, advance_month="{advm}" WHERE ID="{id}";')
             elif dues>0:
-                cursor.execute(f'UPDATE fee SET Dues={dues}, amount_paid = {data['Total']} WHERE ID="{id}";')
+                cursor.execute(f'UPDATE fee SET Dues={dues}, amount_paid = {data["Total"]} WHERE ID="{id}";')
             else:
-                cursor.execute(f'UPDATE fee SET Dues=0, Status="Paid", amount_paid={data['Total']} WHERE ID="{id}";')
+                cursor.execute(f'UPDATE fee SET Dues=0, Status="Paid", amount_paid={data["Total"]} WHERE ID="{id}";')
             today = datetime.date.today()
             if int(today.month)>6:
                 filename=f"static/xlscsv/accounts_{today.year}_{int(today.year)+1}.csv"
@@ -252,27 +252,29 @@ def fee_payment():
                     monthys=data['month_spe'].split(',')
                     inp=''
                     for i in monthys:
-                        if int(data['month_spe'])>6:
-                            val=data['month_spe']+'-'+str(today.year)
+                        if int(i)>6:
+                            val = i + '-' + str(today.year)
                         else:
-                            val=data['month_spe']+'-'+str(today.year+1)
-                        inp=','+str(val)
-                    inp=inp[1:]
+                            val = i + '-' + str(today.year + 1)
+                        if inp:
+                            inp += "," + val
+                        else:
+                            inp = val
                     cursor.execute(f'UPDATE fee SET advance_specific_month="{inp}" WHERE ID="{id}";')       
             else:
                 filename=f"static/xlscsv/accounts_{today.year-1}_{int(today.year)}.csv"
-                if data['month_spe'] is not None and data['month_spe']!='' and data['month_spe']!='0':
-                    monthys=data['month_spe'].split(',')
-                    inp=''
-                    data['Total']=int(data['Total']) - monthlyfee*len(monthys)
-                    for i in monthys:
-                        if int(data['month_spe'])>6:
-                            val=data['month_spe']+'-'+str(today.year)
-                        else:
-                            val=data['month_spe']+'-'+str(today.year+1)
-                        inp=','+str(val)
-                    inp=inp[1:]
-                    cursor.execute(f'UPDATE fee SET advance_specific_month="{inp}" WHERE ID="{id}";')
+                monthys=data['month_spe'].split(',')
+                inp=''
+                for i in monthys:
+                    if int(i)>6:
+                        val = i + '-' + str(today.year)
+                    else:
+                        val = i + '-' + str(today.year + 1)
+                    if inp:
+                        inp += "," + val
+                    else:
+                        inp = val
+                cursor.execute(f'UPDATE fee SET advance_specific_month="{inp}" WHERE ID="{id}";') 
 
             connection.commit()
             if 'connection' in locals() and connection.is_connected():
@@ -295,6 +297,7 @@ def fee_payment():
                 close=int(data['Total'])+int(monthlyfee)*len(monthys)
                 close2=int(open2)+int(monthlyfee)*len(monthys)
                 new={"Date":[str(today),str(today)], "Head":[cb,'2200: Advanced Fee Received'],"Debit":[monthlyfee*len(monthys),None],"Credit":[None,monthlyfee*len(monthys)],'Opening Bal':[open, open2],'Closing Bal':[close,close2]}
+                df=pd.concat([df,pd.DataFrame(new)],axis=0)
             df.to_csv(filename, index=False)
         else:
             if 'connection' in locals() and connection.is_connected():
@@ -310,37 +313,37 @@ def fee_payment():
 
 def update_students(data, cursor):
     if data['NAME'] is not None and data['NAME']!='':
-        cursor.execute(f'UPDATE students SET Name = "{data['NAME']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Name = "{data["NAME"]}" WHERE Registration_No="{data["REG"]}";')
     if data['FNAME'] is not None and data['FNAME']!='':
-        cursor.execute(f'UPDATE students SET FATHER_NAME = "{data['FNAME']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET FATHER_NAME = "{data["FNAME"]}" WHERE Registration_No="{data["REG"]}";')
     if data['GRNO'] is not None and data['GRNO']!='':
-        cursor.execute(f'UPDATE students SET Gr_no = "{data['GRNO']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Gr_no = "{data["GRNO"]}" WHERE Registration_No="{data["REG"]}";')
     if data['DOB'] is not None and data['DOB']!='':
-        cursor.execute(f'UPDATE students SET DOB = DATE "{data['DOB']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET DOB = DATE "{data["DOB"]}" WHERE Registration_No="{data["REG"]}";')
     if data['CONTACT'] is not None and data['CONTACT']!='':
-        cursor.execute(f'UPDATE students SET Contact = "{data['CONTACT']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Contact = "{data["CONTACT"]}" WHERE Registration_No="{data["REG"]}";')
     if data['alt'] is not None and data['alt']!='':
-        cursor.execute(f'UPDATE students SET Alternate_Contact = "{data['alt']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Alternate_Contact = "{data["alt"]}" WHERE Registration_No="{data["REG"]}";')
     if data['admission'] is not None and data['admission']!='':
-        cursor.execute(f'UPDATE students SET Admission_Fees = {data['admission']} WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Admission_Fees = {data["admission"]} WHERE Registration_No="{data["REG"]}";')
     else:
         data['admission']=0
     if data['annual'] is not None and data['annual']!='':
-        cursor.execute(f'UPDATE students SET Annual_Fund = {data['annual']} WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Annual_Fund = {data["annual"]} WHERE Registration_No="{data["REG"]}";')
     else:
         data['annual']=0
     if data['B_FORM'] is not None and data['B_FORM']!='':
-        cursor.execute(f'UPDATE students SET B_Form = "{data['BFORM']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET B_Form = "{data["B_FORM"]}" WHERE Registration_No="{data["REG"]}";')
     if data['Fee'] is not None and data['Fee']!='':
-        cursor.execute(f'UPDATE students SET Month_Fees = {data['Month_Fees']} WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Month_Fees = {data["Fee"]} WHERE Registration_No="{data["REG"]}";')
     else:
         data['Fee']=0
     if data['CLASS'] is not None and data['CLASS']!='':
-        cursor.execute(f'UPDATE students SET Class = "{data['CLASS']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET Class = "{data["CLASS"]}" WHERE Registration_No="{data["REG"]}";')
     if data['Annual_status'] is not None and data['Annual_status']!='':
-        cursor.execute(f'UPDATE students SET annual_fund_status = "{data['Annual_status']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET annual_fund_status = "{data["Annual_status"]}" WHERE Registration_No="{data["REG"]}";')
     if data['Admission_status'] is not None and data['Admission_status']!='':
-        cursor.execute(f'UPDATE students SET admission_fee_status = "{data['Admission_status']}" WHERE Registration_No="{data['REG']}";')
+        cursor.execute(f'UPDATE students SET admission_fee_status = "{data["Admission_status"]}" WHERE Registration_No="{data["REG"]}";')
 
 @app.route('/student_data_update_delete/api', methods=['POST'])
 def add_student():
@@ -352,7 +355,7 @@ def add_student():
     print(data)
     try:
         if int(data['INDEX'])==0:
-            cursor.execute(f'INSERT INTO students (Registration_No) VALUES ("{data['REG']}");')
+            cursor.execute(f'INSERT INTO students (Registration_No) VALUES ("{data["REG"]}");')
             data['Annual_status']='Unpaid'
             data['Admission_status']='Unpaid'
             print("reached")
@@ -385,8 +388,8 @@ def add_student():
             update_students(data, cursor)
         elif int(data['INDEX'])==2:
             print("Yes")
-            cursor.execute(f'DELETE FROM fee WHERE Registration_No="{data['REG']}";')
-            cursor.execute(f'DELETE FROM students WHERE Registration_No="{data['REG']}";')
+            cursor.execute(f'DELETE FROM fee WHERE Registration_No="{data["REG"]}";')
+            cursor.execute(f'DELETE FROM students WHERE Registration_No="{data["REG"]}";')
 
         ##############################################################################################################################################################################################################################################
 
@@ -472,17 +475,17 @@ def salary_payment():
                 new={"Date":[today,today], "Head":["1010: Current (Bank Account)",'1210: Accounts Receivable'],"Debit":[int(data['ADVANCED']),None],"Credit":[None,int(data['ADVANCED'])],'Opening Bal':[open,open2],'Closing Bal':[close,close2]}
             df=pd.concat([df,pd.DataFrame(new)],axis=0)
         if data['ADDITIONAL'] is not None and data['ADDITIONAL']!='0':
-            total_payment=int(data['ADDITIONAL'])
+            total_payment=+int(data['ADDITIONAL'])
             basic+=int(data['ADDITIONAL'])
         if data['Att_allow'] is not None and data['Att_allow']!='0':
-            total_payment=int(data['Att_allow'])
+            total_payment=+int(data['Att_allow'])
             basic+=int(data['Att_allow'])
         if int(data['ADVANCED'])<0:
             deductions=int(data['ADVANCED'])*(-1)
         else:
             deductions=0
-        print(f'("{cnic}", "{pid}",{data['attendace']},{total_payment},{data['MEDICAL']},{int(today.month)},{deductions},{data['ADVANCED']},{data['Att_allow']},{data['ADDITIONAL']});')
-        cursor.execute(f'INSERT INTO payment (CNIC, Payment_ID, Attendence, Total_Payment, Medical_Allowance, monthh, deductions, advance, att_allowance, add_allowance) VALUES("{cnic}", "{pid}",{data['attendace']},{total_payment},{data['MEDICAL']},{int(today.month)},{deductions},{data['ADVANCED']},{data['Att_allow']},{data['ADDITIONAL']});')
+        print(f'("{cnic}", "{pid}",{data["attendace"]},{total_payment},{data["MEDICAL"]},{int(today.month)},{deductions},{data["ADVANCED"]},{data["Att_allow"]},{data["ADDITIONAL"]});')
+        cursor.execute(f'INSERT INTO payment (CNIC, Payment_ID, Attendence, Total_Payment, Medical_Allowance, monthh, deductions, advance, att_allowance, add_allowance) VALUES("{cnic}", "{pid}",{data["attendace"]},{total_payment},{data["MEDICAL"]},{int(today.month)},{deductions},{data["ADVANCED"]},{data["Att_allow"]},{data["ADDITIONAL"]});')
         connection.commit()
         if 'connection' in locals() and connection.is_connected():
             cursor.close()
@@ -706,13 +709,13 @@ def records():
 
     cursor.execute("SELECT p.CNIC, t.Name, p.Payment_ID, p.Attendence, p.Total_Payment, p.Medical_Allowance, p.basic_sal, p.deductions, p.advance, p.att_allowance, p.period_engage, p.add_allowance, p.monthh FROM payment p INNER JOIN teachers t ON p.CNIC=t.CNIC;")
     teachers=cursor.fetchall()
-    teachers_payment_df=pd.DataFrame({"CNIC":[str(i[0]) for i in students], "Name":[str(i[1]) for i in students], 
-                "Payment ID":[str(i[2]) for i in students],"Attendance":[i[3] for i in students],
-                "Total Payment":[i[4] for i in students],"Medical Allowance":[i[5] for i in students],
-                "Basic Salary":[i[6] for i in students],"Deductions":[i[7] for i in students],
-                "Advance":[i[8] for i in students],"Attendance Allowance":[i[9] for i in students],
-                "Period Engage":[str(i[10]) for i in students],"Additional Allowance":[i[11] for i in students],
-                "Month":[i[11] for i in students]})
+    teachers_payment_df=pd.DataFrame({"CNIC":[str(i[0]) for i in teachers], "Name":[str(i[1]) for i in teachers], 
+                "Payment ID":[str(i[2]) for i in teachers],"Attendance":[i[3] for i in teachers],
+                "Total Payment":[i[4] for i in teachers],"Medical Allowance":[i[5] for i in teachers],
+                "Basic Salary":[i[6] for i in teachers],"Deductions":[i[7] for i in teachers],
+                "Advance":[i[8] for i in teachers],"Attendance Allowance":[i[9] for i in teachers],
+                "Period Engage":[str(i[10]) for i in teachers],"Additional Allowance":[i[11] for i in teachers],
+                "Month":[i[12] for i in teachers]})
 
     cursor.execute("SELECT * FROM teachers;")
     teachers=cursor.fetchall()
@@ -1004,7 +1007,7 @@ def report():
     cash_books.append((cash_book,sheet))
 
     for month in list(df['Month'].unique()):
-        trial_bal,income_statement,bal_sheet,cash_book,sheet=create_income_statement(df, year1,year2,f'{month}_{list(df['Year'].unique())[0]}', month=[month])
+        trial_bal,income_statement,bal_sheet,cash_book,sheet=create_income_statement(df, year1,year2,f'{month}_{list(df["Year"].unique())[0]}', month=[month])
         trial_bals.append((trial_bal,sheet))
         income_statements.append((income_statement,sheet))
         bal_sheets.append((bal_sheet,sheet))
